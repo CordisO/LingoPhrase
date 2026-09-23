@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greetings</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=volume_up" />
+  <script src="https://kit.fontawesome.com/e31b8a103c.js" crossorigin="anonymous"></script>
+</head>
+<body class="scenario-body">
+  <div class="scenario-container">
+    <h2>Greetings 
+      <i class="fa-solid fa-handshake"></i>
+    </h2>
+    <div class="dialogue">
+      <div class="phrase">
+        <p class="english">"Hello"</p>
+        <p class="translation">สวัสดีค่ะ</p>
+        <p class="romanization">Sa-wàs-dee khâ</p>
+        <button class="audio-button" onclick="playAudio('สวัสดีค่ะ')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+        volume_up
+        </span></button>
+        <audio id="audio-สวัสดีค่ะ" src="../audio/thai/greeting/สวัสดีค่ะ.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">"How are you?"</p>
+          <p class="translation">สบายดีไหมคะ</p>
+          <p class="romanization">Sa-baai dee mái khá?</p>
+          <button class="audio-button" onclick="playAudio('สบายดีไหมคะ')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-สบายดีไหมคะ" src="../audio/thai/greeting/สบายดีไหมคะ.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">"I'm fine"</p>
+          <p class="translation">สบายดีค่ะ</p>
+          <p class="romanization"> Sa-baai dee khâ</p>
+          <button class="audio-button" onclick="playAudio('สบายดีค่ะ')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-สบายดีค่ะ" src="../audio/thai/greeting/สบายดีค่ะ.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">"Thank you"</p>
+          <p class="translation">ขอบคุณค่ะ</p>
+          <p class="romanization">Khòp khoon khâ</p>
+          <button class="audio-button" onclick="playAudio('ขอบคุณค่ะ')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-ขอบคุณค่ะ" src="../audio/thai/greeting/ขอบคุณค่ะ.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">"You're welcome"</p>
+          <p class="translation">ไม่เป็นไรค่ะ</p>
+          <p class="romanization">Mâi bpen rai khâ</p>
+          <button class="audio-button" onclick="playAudio('ไม่เป็นไรค่ะ')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-ไม่เป็นไรค่ะ" src="../audio/thai/greeting/ไม่เป็นไรค่ะ.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">"What's is your name?"</p>
+          <p class="translation">คุณชื่ออะไรคะ</p>
+          <p class="romanization">Khun cheû a-rai khá?</p>
+          <button class="audio-button" onclick="playAudio('คุณชื่ออะไรคะ')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-คุณชื่ออะไรคะ" src="../audio/thai/greeting/คุณชื่ออะไรคะ.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">"My name is ..."</p>
+          <p class="translation">ฉันชื่อ...ค่ะ</p>
+          <p class="romanization">Chăn cheû... khâ</p>
+          <button class="audio-button" onclick="playAudio('ฉันชื่อ-ค่ะ')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-ฉันชื่อ-ค่ะ" src="../audio/thai/greeting/ฉันชื่อ-ค่ะ.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">"My name is Cordis"</p>
+          <p class="translation">ฉันชื่อคอร์ดิส</p>
+          <p class="romanization">Chăn cheû Kɔɔ-dít</p>
+          <button class="audio-button" onclick="playAudio('Window-seat')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-Window-seat" src="../audio/airport/Window-seat-thai.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">"Nice to meet you"</p>
+          <p class="translation">ยินดีที่ได้รู้จักค่ะ</p>
+          <p class="romanization">Yin dee têe dâai róo jàk khâ</p>
+          <button class="audio-button" onclick="playAudio('Window-seat')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-Window-seat" src="../audio/airport/Window-seat-thai.m4a"></audio>
+      </div>
+
+    </div>
+
+    <button onclick="window.history.back()" class="back-btn">← Back</button>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>At the Airport</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=volume_up" />
+  <script src="https://kit.fontawesome.com/e31b8a103c.js" crossorigin="anonymous"></script>
+</head>
+<body class="scenario-body">
+  <div class="scenario-container">
+    <h2>At the Airport <i class="fa-solid fa-plane"></i></h2>
+    <div class="dialogue">
+      <div class="phrase">
+        <p class="english">Where is the check-in counter?</p>
+        <p class="translation">เคาน์เตอร์เช็คอินอยู่ที่ไหน</p>
+        <p class="romanization">khao-têr chék-in yùu tîi năi</p>
+        <button class="audio-button" onclick="playAudio('checkin-counter')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+        volume_up
+        </span></button>
+        <audio id="audio-checkin-counter" src="../audio/thai/airport/checkin-counter-thai.m4a"></audio>
+      </div>
+
+      <div class="phrase">
+          <p class="english">I would like to check in</p>
+          <p class="translation">ฉันขอเช็คอินค่ะ</p>
+          <p class="romanization">chăn khŏr check-in ká</p>
+          <button class="audio-button" onclick="playAudio('want-to-checkin')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-want-to-checkin" src="../audio/thai/airport/i-want-to-checkin-thai.m4a"></audio>
+        </div>
+
+      <div class="phrase">
+          <p class="english">Here is my passport</p>
+          <p class="translation">นี่พาสปอร์ตของฉันค่ะ</p>
+          <p class="romanization">nîi passport khŏng chăn ká</p>
+          <button class="audio-button" onclick="playAudio('my-passport')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-my-passport" src="../audio/thai/airport/my-passport-thai.m4a"></audio>
+        </div>
+
+      <div class="phrase">
+          <p class="english">How many bags can I check in?</p>
+          <p class="translation">ฉันโหลดกระเป๋าได้กี่ใบคะ</p>
+          <p class="romanization">chăn lòht grà-bpăo dâi gìi bai ká</p>
+          <button class="audio-button" onclick="playAudio('How-many-bags')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-How-many-bags" src="../audio/thai/airport/How-many-bags-can-I-check-in-thai.m4a"></audio>
+        </div>
+
+      <div class="phrase">
+          <p class="english">Window seat, please</p>
+          <p class="translation">ขอที่นั่งริมหน้าต่างค่ะ</p>
+          <p class="romanization">khŏr thîi nâng rim nâa-dtàang ká</p>
+          <button class="audio-button" onclick="playAudio('Window-seat')"><span class="material-symbols-outlined" style="font-size: 24px;" >
+          volume_up
+          </span></button>
+          <audio id="audio-Window-seat" src="../audio/thai/airport/Window-seat-thai.m4a"></audio>
+        </div>
+    </div>
+
+    <button onclick="window.history.back()" class="back-btn">← Back</button>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>
