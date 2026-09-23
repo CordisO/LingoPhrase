@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+  font-family: "Dingos Stamp";
+  src: url("fonts/Dingos-Stamp_Black.otf") format("truetype");
+}
+
+/* Reset and setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Loading screen */
+.loading-body {
+  background-color: #8485f8;
+  color: white;
+}
+.loading-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loading screen styles */
+.logo {
+  font-size: 3rem;
+  font-family: 'Dingos Stamp', sans-serif;
+  color: #f4d9db;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.loader {
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,#fff 90%,#8485f8);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
+}
+
+/* Language screen */
+.language-body {
+  background-color: #f4d9db;
+}
+.language-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.language-container img {
+    max-width: 250px;  
+    width: 80%;        
+    height: auto;   
+    margin-bottom: 20px;
+}
+
+.language-container h2 {
+    font-family: 'Alata', sans-serif;
+    color: #002ad9;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.lang-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.lang-btn img {
+  max-width: 20px;
+  margin-top: 10px;
+}
+
+.lang-btn.thai {
+  display: inline-flex;
+  align-items: center;
+  background: #f44336;
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  gap: 10px;
+}
+
+.lang-btn.thai img {
+    max-width: 24px;
+    height: auto;
+    margin-top: 18px;
+}
+
+.lang-btn.korean {
+  display: inline-flex;
+  align-items: center;
+  background: #3e3ff3;
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  gap: 10px;
+}
+
+.lang-btn.korean img {
+    max-width: 24px;
+    height: auto;
+    margin-top: 18px;
+}
+
+/*Scenarios.html styling*/
+.scenario-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.scenario-container h2 {
+    font-family: 'Dingos Stamp', sans-serif;
+    font-size: 2.5rem;
+    color: #f4d9db;
+}
+
+.material-symbols-outlined {
+    font-size: 25px;
+    color: #f4d9db;
+}
+
+.scenarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+  max-width: 700px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.scenario-card {
+  background: #ffffff;
+  text-decoration: none;
+  border: 2px solid #eee;
+  border-radius: 16px;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #002ad9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scenario-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background: #f4d9db;
+}
+
+/* Scenario screen */
+.scenario-body {
+  background-color: #8485f8;
+}
+
+.dialogue {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #3e3ff3;
+}
+
+.phrase {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.phrase p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.english {
+  font-weight: bold;
+  color: #3e3ff3;
+  font-size: 1.4rem;
+  font-family: 'Balsamiq sans', sans-serif;
+}
+
+.translation {
+  color: #8485f8;
+  font-weight: 500;
+  font-size: 1.4rem;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.korean-translation {
+  color: #8485f8;
+  font-weight: 500;
+  font-size: 1.4rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.romanization {
+  color: #ed89b3;
+  font-size: 1.4rem;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-style: italic;
+}
+
+.korean-romanization {
+  color: #ed89b3;
+  font-size: 1.4rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: italic;
+}
+
+.audio-button {
+  margin-top: 10px;
+  background-color: #8485f8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.audio-button:hover {
+  background-color: #002ad9;
+}
+
+
+
+
+.back-btn {
+  display: flex;
+  justify-self: center;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #f4d9db;
+  font-family: 'Balsamiq Sans', sans-serif;
+  color: #3e3ff3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+/*Mobile Responsivity*/
+
+@media (max-width: 480px) {
+
+  h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .phrase p,
+  .english,
+  .translation,
+  .romanization,
+  .korean-translation,
+  .korean-romanization {
+    font-size: 1rem;
+  }
+
+  .audio-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .scenario-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .scenarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .scenario-card {
+    width: 100%;
+    font-size: .8rem;
+    padding: 16px 20px;
+    transition: transform 0.1s ease
+  }
+
+  .scenario-card:active {
+    transform: scale(0.96);
+  }
+
+  .dialogue {
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .back-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
